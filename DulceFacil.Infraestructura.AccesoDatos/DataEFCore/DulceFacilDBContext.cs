@@ -184,5 +184,10 @@ public partial class DulceFacilDBContext : DbContext
         OnModelCreatingPartial(modelBuilder);
     }
 
+    internal DbSet<T> dbSet<T>()
+    {
+        throw new NotImplementedException();
+    }
+
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
